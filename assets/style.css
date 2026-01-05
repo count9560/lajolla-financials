@@ -248,6 +248,46 @@ footer {
     }
 }
 
+/* SEC Original Tables - EDGAR 원본 스타일 */
+.sec-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 10pt;
+}
+
+.sec-table td,
+.sec-table th {
+    padding: 2px 8px;
+    text-align: right;
+    vertical-align: bottom;
+}
+
+.sec-table td:first-child {
+    text-align: left;
+    min-width: 400px;
+    position: static;
+    background: inherit !important;
+}
+
+/* Zebra striping - SEC EDGAR 원본 색상 */
+.sec-table tr:nth-child(odd) td {
+    background: #cceeff;
+}
+
+.sec-table tr:nth-child(even) td {
+    background: #ffffff;
+}
+
+.sec-table span {
+    display: inline;
+}
+
+.sec-table p {
+    margin: 0;
+    padding: 0;
+}
+
 /* Print styles */
 @media print {
     body {
